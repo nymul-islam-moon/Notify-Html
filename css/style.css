@@ -85,3 +85,29 @@ body {
     margin-bottom: 20px;
     margin-left: 8rem;
 }
+
+/* registration css */
+
+.registration-container {
+    max-width: 500px;
+    margin-inline: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.registration-container h2 {
+    margin-bottom: 20px;
+}
+.registration-container .form-control {
+    margin-bottom: 15px;
+}
+.registration-container .btn-primary {
+    width: 100%;
+}
+.registration-container img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
