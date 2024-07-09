@@ -3,7 +3,6 @@
 body {
     font-family: "Poetsen One", sans-serif;
     margin: 0;
-    place-items: center;
     background-color: #f0f2f5;
 }
 
@@ -43,17 +42,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
     margin-bottom: 20px;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
 }
 
 .post-card:hover {
-    transform: scale(1.02); /* Slightly enlarge the card on hover */
+    transform: scale(1.02);
     background-image: radial-gradient(#E3E3D2,#B0B096);
-}
-
-.post-card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .post-card .card-body {
@@ -68,13 +62,8 @@ body {
     color: #606770;
 }
 
-.post-show {
-    background-image: radial-gradient(#E3E3D2,#B0B096);
-}
-
-/* Login CSS */
-.login-container {
-    max-width: 400px;
+.login-container,
+.registration-container {
     margin-inline: auto;
     margin-top: 7rem;
     padding: 20px;
@@ -83,54 +72,24 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.login-container h2 {
-    margin-bottom: 20px;
+.login-container {
+    max-width: 400px;
 }
 
-.login-container .form-control {
-    margin-bottom: 15px;
-}
-
-.login-container .btn-primary {
-    width: 100%;
-}
-
-.login-container img {
-    max-width: 100px;
-    margin-bottom: 20px;
-    margin-left: 8rem;
-}
-
-/* Registration CSS */
 .registration-container {
     max-width: 500px;
-    margin-inline: auto;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-.registration-container h2 {
-    margin-bottom: 20px;
-}
-
-.registration-container .form-control {
-    margin-bottom: 15px;
-}
-
-.registration-container .btn-primary {
-    width: 100%;
-}
-
+.login-container img,
 .registration-container img {
     max-width: 100px;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Pagination styling */
 .pagination {
     display: flex;
     justify-content: center;
@@ -144,8 +103,6 @@ body {
 }
 
 .pagination .page-item .page-link {
-    position: relative;
-    display: block;
     padding: 0.5rem 0.75rem;
     margin-left: -1px;
     line-height: 1.25;
@@ -156,9 +113,7 @@ body {
 
 .pagination .page-item .page-link:hover {
     color: #0056b3;
-    text-decoration: none;
     background-color: #e9ecef;
-    border-color: #dee2e6;
 }
 
 .pagination .page-item.active .page-link {
@@ -168,7 +123,6 @@ body {
     border-color: #007bff;
 }
 
-/* Tabs Styling */
 .nav-tabs {
     margin-bottom: 20px;
 }

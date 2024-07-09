@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-custom bg-primary">
     <div class="container">
         <a class="navbar-brand" href="index.html">Notification</a>
@@ -45,7 +44,6 @@
     </div>
 </div>
 
-<!-- New Tab Section Start -->
 <div class="container mt-4">
     <ul class="nav nav-tabs" id="notificationTabs" role="tablist">
         <li class="nav-item">
@@ -60,7 +58,37 @@
     </ul>
     <div class="tab-content" id="notificationTabsContent">
         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-            <!-- All Notifications Content -->
+            <div class="row">
+                <!-- Posts start here -->
+                <div class="col-md-6">
+                    <div class="post-card card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title text-center"><a href="show.html" class="text-decoration-none">Post Title 1</a></h3>
+                            <p class="card-text">This is the description of the first post. It's designed to be visually appealing and user-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="post-card card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title text-center"><a href="show.html" class="text-decoration-none">Post Title 2</a></h3>
+                            <p class="card-text">This is the description of the second post. It's designed to be visually appealing and user-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination controls start here -->
+            <div class="row justify-content-center mt-4">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="tab-pane fade" id="important" role="tabpanel" aria-labelledby="important-tab">
             <!-- Important Notifications Content -->
@@ -69,44 +97,6 @@
             <!-- Selected Notifications Content -->
         </div>
     </div>
-</div>
-<!-- New Tab Section End -->
-
-<div class="container mt-4">
-    <div class="row">
-        <!-- Posts start here -->
-        <div class="col-md-6">
-            <div class="post-card card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title text-center"><a href="show.html" class="text-decoration-none paper"> Post Title 1 </a></h3>
-                    <p class="card-text paper">This is the description of the first post. It's designed to be visually appealing and user-friendly.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="post-card card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title text-center"><a href="show.html" class="text-decoration-none paper"> Post Title 2 </a></h3>
-                    <p class="card-text paper">This is the description of the second post. It's designed to be visually appealing and user-friendly.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Add more posts here -->
-    </div>
-    <!-- Pagination controls start here -->
-    <div class="row justify-content-center mt-4">
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Pagination controls end here -->
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
